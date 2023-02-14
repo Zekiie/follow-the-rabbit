@@ -1,32 +1,16 @@
-import * as React from 'react';
-import type { HeadFC, PageProps } from 'gatsby';
-import { Main } from 'components/common/main';
+import * as React from "react";
+import type { HeadFC, PageProps } from "gatsby";
+import Layout from "../component/layout/Layout";
 
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-};
-const headingAccentStyles = {
-  color: '#663399',
-};
-const paragraphStyles = {
-  marginBottom: 48,
-};
-
-const IndexPage: React.FC<PageProps> = () => {
+import { home } from "../styles/index.module.css";
+const HomePage: React.FC<PageProps> = () => {
   return (
-    <Main>
-      <h1 style={headingStyles}>
-        <br />
-        <span style={headingAccentStyles}></span>
-      </h1>
-      <p style={paragraphStyles}></p>
-      <ul></ul>
-    </Main>
+    <Layout>
+      <section className={home}>This is home page</section>
+    </Layout>
   );
 };
 
-export default IndexPage;
+export default HomePage;
 
 export const Head: HeadFC = () => <title>Home Page</title>;

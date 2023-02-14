@@ -1,0 +1,9 @@
+:root {
+  /* colors */
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* width */
+  --main-width: 70%;
+}

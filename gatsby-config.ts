@@ -1,6 +1,5 @@
 import type { GatsbyConfig } from 'gatsby';
 
-const path = require('path');
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `follow the rabbit`,
@@ -11,23 +10,18 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    'gatsby-plugin-vanilla-extract',
-    'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
+    "gatsby-plugin-vanilla-extract",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-transformer-typescript-css-modules",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'images',
-        path: './src/images/',
+        name: "images",
+        path: "./src/images/",
       },
-      __key: 'images',
-    },
-    {
-      resolve: 'gatsby-plugin-root-import',
-      options: {
-        root: path.join(__dirname, 'src'),
-      },
+      __key: "images",
     },
   ],
 };
