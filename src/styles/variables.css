@@ -3,7 +3,13 @@
   --blue: #1e90ff;
   --white: #ffffff;
   --black: #000000;
+  --light-green: #a5d6a7;
+  --dark-green: #43a047;
+  --green: #66bb6a;
 
   /* width */
   --main-width: 70%;
+
+  /* font-size  */
+  --small-text: 14px;
 }

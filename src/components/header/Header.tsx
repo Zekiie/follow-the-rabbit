@@ -1,13 +1,12 @@
-import React, { FC } from "react";
-import logo from "../../images/logo.png";
-import { header, navBarList, navBarItem } from "./header.module.css";
-import { Link } from "gatsby";
+import React, { FC } from 'react';
+import { header, navBarList, navBarItem } from './header.module.css';
+import { Link } from 'gatsby';
 
 const Header: FC = () => (
   <header className={header}>
     <div>
       <Link to="/">
-        <img src={logo} alt="logo" width={100} />
+        <img src="/logo.png" alt="logo" width={100} />
       </Link>
     </div>
     <nav>
