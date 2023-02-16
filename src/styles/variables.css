@@ -1,11 +1,14 @@
 :root {
   /* colors */
-  --blue: #1e90ff;
+  --blue: #94AFB8;
   --white: #ffffff;
   --black: #000000;
   --light-green: #a5d6a7;
   --dark-green: #43a047;
   --green: #66bb6a;
+
+  /* rgb color*/
+  --light-green-rgb: 165, 214, 167;
 
   /* width */
   --main-width: 70%;

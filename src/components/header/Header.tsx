@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import { header, navBarList, navBarItem } from './header.module.css';
 import { Link } from 'gatsby';
+import { PAGES } from '../../constants/constants';
 
 const Header: FC = () => (
   <header className={header}>
@@ -11,21 +12,11 @@ const Header: FC = () => (
     </div>
     <nav>
       <ul className={navBarList}>
-        <li className={navBarItem}>
-          <Link to="/">Home</Link>
-        </li>
-        <li className={navBarItem}>
-          <Link to="/about">About Me</Link>
-        </li>
-        <li className={navBarItem}>
-          <Link to="/skills">Skills</Link>
-        </li>
-        <li className={navBarItem}>
-          <Link to="/projects">Projects</Link>
-        </li>
-        <li className={navBarItem}>
-          <Link to="/contacts">Contacts</Link>
-        </li>
+        {PAGES.map(({ name, path }) => (
+          <li className={navBarItem}>
+            <Link to={path}>{name}</Link>
+          </li>
+        ))}
       </ul>
     </nav>
   </header>

@@ -1,0 +1,29 @@
+@import '../../styles/variables.css';
+
+.orderForm {
+  padding: 20px 40px;
+  background-color: rgba(var(--light-green-rgb), 0.8);
+  color: var(--white);
+  align-items: center;
+}
+
+.textInput {
+  color: var(--dark-green) !important;
+  background: var(--white);
+  border-radius: 5px;
+}
+
+.button {
+  min-width: 150px;
+  margin: 12px auto 12px;
+  background: var(--dark-green);
+}
+
+.button:hover {
+  background: var(--green);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}

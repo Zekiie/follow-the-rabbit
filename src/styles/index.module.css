@@ -1,7 +1,14 @@
 @import "variables.css";
 
 .home {
-  width: var(--main-width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 750px;
+  background: url("https://images.pexels.com/photos/305821/pexels-photo-305821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") center/cover no-repeat;
+}
+
+.content {
+  width: var(--main-width);
   margin: 0 auto;
 }

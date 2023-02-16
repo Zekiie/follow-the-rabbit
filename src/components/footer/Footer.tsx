@@ -16,7 +16,7 @@ const Footer: FC = () => (
         </a>
       ))}
     </div>
-    <p className={copyright}>&copy; Copyright 2023 Zekiie Irikh</p>
+    <p className={copyright}>&copy; Copyright 2023 MoZi</p>
   </footer>
 );
 
