@@ -1,0 +1,76 @@
+.header {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  top: 0
+}
+
+.navBarList {
+  display: flex;
+}
+
+.navBarItem {
+  padding: 20px;
+  font-weight: bold;
+  color: var(--dark-blue);
+}
+
+.navBarItem a {
+  color: var(--dark-blue);
+}
+
+.navBarItem a:hover {
+  filter: drop-shadow(0 3mm 1.5mm var(--dark-green))
+}
+
+.sideNavBar {
+  width: 240px;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark-blue);
+  height: 70px;
+  border-bottom-left-radius: 20px;
+  transition: width .5s ease;
+}
+
+.sideNavBar__search {
+  width: 450px;
+}
+
+.button {
+  width: 20px;
+  height: 20px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.search {
+  background: url('../../../static/Search.svg') center/cover no-repeat;
+}
+
+.profile {
+  background: url('../../../static/Profile.svg') center/cover no-repeat;
+  margin: 0 15px;
+}
+
+.menu {
+  background: url('../../../static/Menu.svg') center/cover no-repeat;
+}
+
+.close {
+  background: url('../../../static/x-close.svg') center/cover no-repeat;
+}
+
+.logo {
+  height: 100%;
+  background: url('../../../static/img.png') center/contain no-repeat;
+  padding: 0 20px;
+}

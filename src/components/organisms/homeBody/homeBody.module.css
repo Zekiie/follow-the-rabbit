@@ -1,0 +1,70 @@
+.container {
+  height: 70vh;
+  color: var(--dark-blue);
+}
+
+.container .itemContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .chip {
+  width: 20%;
+  background-color: var(--light-green-transparent);
+  font-size: var(--small-text);
+  letter-spacing: 1px;
+}
+
+.container .title {
+  font-weight: 800;
+  margin: 20px 0;
+}
+
+.content {
+  width: 50%;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-start;
+  height: 60px;
+  box-shadow: none;
+  margin-top: 20px;
+}
+
+.buttonGroup .showAll,
+.buttonGroup .choice {
+  padding: 0 30px;
+  border-radius: 10px;
+  text-transform: none;
+  font-size: var(--large-text);
+  box-shadow: none;
+}
+
+.buttonGroup .showAll {
+  margin-right: 20px;
+  background-color: var(--green);
+}
+
+.buttonGroup .choice {
+  background-color: var(--yellow);
+}
+
+.buttonGroup .showAll:hover,
+.buttonGroup .choice:hover {
+  background-color: var(--dark-blue);
+  opacity: 0.8;
+}
+
+
+.image {
+  background: url("../../../static/plate.png") center/contain no-repeat;
+  height: 60vh;
+}
