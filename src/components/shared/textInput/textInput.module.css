@@ -1,6 +1,0 @@
-@import '../../../styles/variables.css';
-
-.textInput {
-  color: var(--dark-green) !important;
-  background: var(--white);
-}

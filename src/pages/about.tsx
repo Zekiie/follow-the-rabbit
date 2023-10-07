@@ -1,15 +1,12 @@
 import React, { FC } from 'react';
-import Layout from '../components/layout/Layout';
 
 const AboutPage: FC = () => (
-  <Layout>
+  <div>
+    <div>1</div>
     <div>
-      <div>1</div>
-      <div>
-        <h1>Our Products</h1>
-      </div>
+      <h1>Our Products</h1>
     </div>
-  </Layout>
+  </div>
 );
 
 export default AboutPage;
