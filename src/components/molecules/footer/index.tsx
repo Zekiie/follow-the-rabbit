@@ -19,9 +19,12 @@ const Footer: FC = () => {
         Mohammediti is the author of the most recipes. The most important thing
         is put rice in the water at least for 30 mins.
       </Box>
-      <Box className={styles.socialMediaBar}>
-        {linksConfig.map(({ to, classes }) => (
-          <Link href={to} className={classes} />
+      <Box
+        className={styles.socialMediaBar}
+        display={{ xs: 'none', md: 'block', lg: 'block' }}
+      >
+        {linksConfig.map(({ to, classes }, i) => (
+          <Link key={to + i} href={to} className={classes} />
         ))}
         <Box className={styles.line} />
       </Box>

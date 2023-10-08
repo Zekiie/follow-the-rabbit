@@ -1,5 +1,5 @@
 import React, { FC, useCallback, useMemo, useState } from 'react';
-import { Box, IconButton, Link, Tooltip } from '@mui/material';
+import { Box, Link, MenuList, MenuItem } from '@mui/material';
 
 import * as styles from './header.module.css';
 import logo from '../../../static/img.png';
@@ -49,25 +49,24 @@ const Header: FC = () => {
       <Link href="/" underline="none">
         <img src={logo} alt="logo" width={100} className={styles.logo} />
       </Link>
-      <nav>
-        <ul className={styles.navBarList}>
-          {PAGES.map(({ name, path }) => (
-            <li className={styles.navBarItem}>
-              <Link href={path} underline="none">
-                {name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <MenuList
+        className={styles.navBarList}
+        sx={{ display: { xs: 'none', md: 'block' } }}
+      >
+        {PAGES.map(({ name, path }) => (
+          <MenuItem key={path} className={styles.navBarItem}>
+            <Link href={path} underline="none">
+              {name}
+            </Link>
+          </MenuItem>
+        ))}
+      </MenuList>
       <Box
         className={`${styles.sideNavBar} ${
           isSearchBarOpen ? styles['sideNavBar__search'] : ''
         }`}
       >
-        <Search
-            isSearchBarOpen={isSearchBarOpen}
-        />
+        <Search isSearchBarOpen={isSearchBarOpen} />
         <SideNavBar items={sideNawBarConfig} />
       </Box>
     </header>
